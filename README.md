@@ -23,4 +23,5 @@ You can create an agent in VSCode by following these steps:
 There are list of agents in this repo that you can reuse. They are in forever development status as we continue to enhance and improve them.
 
 | Agent Type | Description | Location |
+| --- | --- | --- |
 | Review Assistants | Agents designed to assist in performing reviews (e.g. risk review) | [review](./review) |
