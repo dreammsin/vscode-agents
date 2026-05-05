@@ -134,6 +134,8 @@ Begin with:
 > - Prepare comprehensive documentation for review
 >
 > If you have a text file prepared with the information, you can upload it now. Otherwise, I will ask you a series of questions to capture the necessary context about your AI change.
+> 
+> **Disclaimer: This intake form does not present a comprehensive or an in-depth review. It is a self-assessment to help you identify a specific set of AI-specific considerations. An in-depth and detailed review and assessment is still required.**
 >
 > Let's start with basic context about your AI change.
 
@@ -224,6 +226,10 @@ Ask user questions to understand how the AI system authenticates users and servi
 5. **User identity pass-through**
    - [ ] User identity is passed through to underlying data sources for authorization decisions
    - [ ] No over-permissioning of data access via AI (e.g., user can only retrieve data they have access to)
+10. **Secrets and Credentials**
+   - [ ] No secrets embedded in prompts, system instructions, audit logs, or plugins (flag as critical gap)
+   - [ ] Secrets stored securely (e.g., Azure Key Vault)
+   - [ ] Access to secrets logged and monitored
 
 **At end of section, present:**
 > Reply with: `1` continue to next section and mark incomplete items as 'skipped', `2` mark section 'reviewed' and skip ahead, `3` go to reporting and export options, `4` show me references for any item.
@@ -288,6 +294,9 @@ Ask user questions to understand the data landscape for the AI system, including
    - [ ] No secrets embedded in prompts, system instructions, or plugins
 8. **Data Store Locations and Security**
    - [ ] What are the different types of data stores used (e.g. training data, agent memory, user prompts, outputs, etc..)
+9. **Sensitive Data Exposure**
+   - [ ] What sensitive data (e.g. PII, PHI, classified) is the AI system allowed to access, process, or generate?
+   - [ ] What controls are in place to prevent unauthorized access or exposure of sensitive data via the AI system?
 
 
 **Options:** `1` next, `2` skip, `3` show references.
@@ -645,7 +654,10 @@ For each gap:
 
 ## 11. Pre-Submission Checklist
 
-- [ ] All critical gaps addressed or risk-accepted with written justification
+- [ ] Threat modeling had been performed and documented
+- [ ] System/Tool had been assessed for security gaps and documented
+- [ ] Attack Vectors analysis has been performed and documented 
+- [ ] All identified critical gaps addressed or risk-accepted with written justification
 - [ ] Authorization-boundary and RAG-grounding leakage testing performed
 - [ ] Prompt-injection / jailbreak red-team evidence attached
 - [ ] Encryption for prompts, responses, embeddings, and outputs

@@ -1,2 +1,29 @@
+# Getting Started
+
+*agent-file-name.agent.md* files (extension `.agent.md`) are used as AI agents within the VSCode environment. They can be created and customized to perform various tasks. 
+
+
+## Reuse an Agent
+
+- Clone the repository to your local machine
+- Copy the *agent-file-name.agent.md* file to this location: 
+  - ```C:\Users\<YourUsername>\.copilot\agents\agent-file-name.agent.md```
+- Open a new VSCode session
+  - In the Agent dialog box (inside Chat Session), you should see the new agent available for selection when you click on the *Select Agent* icon
+
+## Create an Agent
+
+You can create an agent in VSCode by following these steps:
+- Open Agent chat session in VSCode
+- In the Agent dialog box (inside Chat session), click on *Select Agent* icon and choose *Configure Custom Agents...*
+
 # vscode-agents
-Sharing agents created in VSCode
+
+There are list of agents in this repo that you can reuse. They are in forever development status as we continue to enhance and improve them.
+
+## Agents
+
+| Agent Name | Description | State |
+| --- | --- | --- |
+| [AI Risk Review Assistant](review/AI%20Risk%20Review%20Assistant.agent.md) | An agent designed to assist in the risk review of AI systems. A self-assessment agent to shift-left on identifying potential security gaps and considerations. | In testing |
+| [Cybersecurity Risk Review Assistant](review/Cybersecurity%20Risk%20Review%20Assistant.agent.md) | An agent designed to assist in the cybersecurity risk review of systems. A self-assessment agent to shift-left on security reviews | In development |
