@@ -22,9 +22,5 @@ You can create an agent in VSCode by following these steps:
 
 There are list of agents in this repo that you can reuse. They are in forever development status as we continue to enhance and improve them.
 
-## Agents
-
-| Agent Name | Description | State |
-| --- | --- | --- |
-| [AI Risk Review Assistant](review/AI%20Risk%20Review%20Assistant.agent.md) | An agent designed to assist in the risk review of AI systems. A self-assessment agent to shift-left on identifying potential security gaps and considerations. | In testing |
-| [Cybersecurity Risk Review Assistant](review/Cybersecurity%20Risk%20Review%20Assistant.agent.md) | An agent designed to assist in the cybersecurity risk review of systems. A self-assessment agent to shift-left on security reviews | In development |
+| Agent Type | Description | Location |
+| Review Assistants | Agents designed to assist in performing reviews (e.g. risk review) | [review](./review) |
