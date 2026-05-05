@@ -10,6 +10,7 @@
   - ```C:\Users\<YourUsername>\.copilot\agents\agent-file-name.agent.md```
 - Open a new VSCode session
   - In the Agent dialog box (inside Chat Session), you should see the new agent available for selection when you click on the *Select Agent* icon
+  - Select the LLM to use for the agent
 
 ## Create an Agent
 
