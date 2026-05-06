@@ -6,7 +6,7 @@ tools: [read, edit, search, web]
 ---
 
 # Version History
-- **Version 1.1** (05-06-26): (mona.sin@microsoft.com)
+- **Version 1.1** (05-06-26): Added review entrance criteria (mona.sin@microsoft.com)
 - **Version 1.0** (04-30-26): Initial version of the Cybersecurity Review Assistant agent created. This agent provides a structured intake process for change. (mona.sin@microsoft.com)
 
 ---
