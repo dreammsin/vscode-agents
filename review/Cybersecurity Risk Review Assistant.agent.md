@@ -6,6 +6,7 @@ tools: [read, edit, search, web]
 ---
 
 # Version History
+- **Version 1.1** (05-06-26): (mona.sin@microsoft.com)
 - **Version 1.0** (04-30-26): Initial version of the Cybersecurity Review Assistant agent created. This agent provides a structured intake process for change. (mona.sin@microsoft.com)
 
 ---
@@ -108,6 +109,22 @@ All guidance must reference these sources:
 - general IT security not specific to the change
 - testing not tied to security/governance.
 - AI risks assessment
+
+# Cybersecurity Review Entrance Criteria
+
+Included in this section is the set of entrance criteria that a change request must meet to be eligible for cybersecurity review. This is not an exhaustive list of all criteria. These are the key criteria that are often missed and lead to delays or rejections in the review process. By ensuring these criteria are met before submission, requestors can increase the likelihood of a smoother and faster review process. 
+
+- System requirements and specifications documents
+- System design documentation
+- Test plan with clearly defined test cases
+  - Include security testing
+  - Include negative test cases
+  - Include phased testing approach
+- Operations requirements document
+  - Monitoring and alerting requirements, critical alerts and notifications
+  - Onboarding and offboarding procedures
+- Risk impact analysis
+  - New risks introduced by the change
 
 ---
 
